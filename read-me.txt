@@ -1,0 +1,52 @@
+
+RSI-CB256 is a large scale remote sensing image classification benchmark via crowdsource data. 
+can be downloaded from https://onedrive.live.com/?cid=010149152ff2b56d&id=10149152FF2B56D%21105&authkey=!ADyXDc-zA56zPv4
+
+splitting dataset.ipynb used to split the dataset 
+RSI-CB256 into training, validation and test set.
+
+satellite-data_splitted folder-dataset has the 3 folders with the splitted data train, val, test
+
+Seperate folders are made for each model each has 3 files- the path for respective dataset has to be given in each code notebook file
+1. A modelname.ipynb training file (requires to load train and val dataset from splitted dataset folder)
+2. A saved mode.h5 file 
+3. A modelname_performance.ipynb file which loads the model.h5 file and tests the performance on test data.(requires to load test dataset from splitted dataset folder
+
+
+Folder PATH listing 
+
+C:.
+|   structure.txt
+|   splitting dataset.ipynb
+|   
+\---Models
+    +---DenseNet121
+    |       DenseNet121.ipynb
+    |       DenseNet121_Performance.ipynb
+    |       trained_densenet121.h5
+    |       
+    +---EffecientNetB0
+    |       EffecientNetB0.ipynb
+    |       EffecientNetB0_Performance.ipynb
+    |       trained_model_EffecientNetB0.h5
+    |       
+    +---Inceptionv3
+    |       Inceptionv3.ipynb
+    |       Inceptionv3_Performance.ipynb
+    |       trained_Inceptionv3.h5
+    |       
+    +---MobileNetV2
+    |       MobileNetV2.ipynb
+    |       MobileNetV2_Performance.ipynb
+    |       trained_mobileNetv2.h5
+    |       
+    +---ResNet101
+    |       ResNet101.ipynb
+    |       ResNet101_Performance.ipynb
+    |       trained_ResNet101.h5
+    |       
+    \---VGG16
+            trained_model_vgg16.h5
+            VGG16.ipynb
+            VGG16_Performance.ipynb
+            
